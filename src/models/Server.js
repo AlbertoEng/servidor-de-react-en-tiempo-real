@@ -23,6 +23,7 @@ class Server {
     }
 
     initServer(){
+        console.log(process.env)
         this.server.listen(this.port,()=>{
             console.log(`Servidor Conectado a puerto: ${this.port}`)
         });
